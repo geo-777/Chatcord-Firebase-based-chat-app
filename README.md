@@ -1,2 +1,33 @@
-# Chatcord-Firebase-based-chat-app
-First full fledged project | 💬 A beginner attempt to build a fully front-end real-time chat application using HTML, CSS, JavaScript, and Firebase. This project helped me explore concepts like authentication, real-time communication, and UI design — all without a traditional backend.
+# 💬 Chatcord
+
+A beginner-friendly, front-end-only real-time chat application built using **HTML**, **CSS**, **JavaScript**, and **Firebase**.
+
+This is a personal project to help me learn:
+- 🔐 Firebase Authentication
+- 📡 Real-time database updates
+- 🖥️ DOM manipulation and UI structure
+- 🌐 Front-end project structure and Git version control
+
+## 🚀 Features
+
+- User authentication (login/register) via Firebase
+- Real-time messaging using Firebase Realtime Database
+- Responsive UI (mobile + desktop)
+- Clean design using a custom color palette
+- No backend server — fully front-end powered
+
+## 🛠️ Tech Stack
+
+- HTML, CSS, JavaScript (Vanilla JS)
+- Firebase Authentication
+- Firebase Realtime Database
+- Git & GitHub
+
+## 🎨 Color Palette
+
+- `#222831` - Dark Gray
+- `rgb(57, 62, 70)` - Gray
+- `rgb(0, 173, 181)` - Cyan Accent
+- `rgb(238, 238, 238)` - Light Gray/White
+
+
