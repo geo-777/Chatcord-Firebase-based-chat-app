@@ -1,6 +1,6 @@
 # 💬 Chatcord
-[![wakatime](https://wakatime.com/badge/user/3cf5e2aa-433d-49e0-81f1-091d6550808a.svg)](https://wakatime.com/@3cf5e2aa-433d-49e0-81f1-091d6550808a)
-A beginner-friendly, front-end-only real-time chat application built using **HTML**, **CSS**, **JavaScript**, and **Firebase**.
+Coding Hours : [![wakatime](https://wakatime.com/badge/user/3cf5e2aa-433d-49e0-81f1-091d6550808a.svg)](https://wakatime.com/@3cf5e2aa-433d-49e0-81f1-091d6550808a)
+### A beginner-friendly, front-end-only real-time chat application built using **HTML**, **CSS**, **JavaScript**, and **Firebase**.
 
 This is a personal project to help me learn:
 - 🔐 Firebase Authentication
