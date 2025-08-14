@@ -1,0 +1,44 @@
+body {
+  background-color: var(--bg-darker);
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+.loader-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+}
+
+.logo-loader img {
+  max-width: 90%;
+  height: auto;
+  max-height: 15rem; /* smaller cap for responsiveness */
+  margin-bottom: 25px;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Small screen tweaks */
+@media (max-width: 480px) {
+  .logo-loader img {
+    max-height: 10rem;
+    margin-bottom: 15px;
+  }
+}

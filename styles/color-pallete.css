@@ -1,0 +1,42 @@
+/* colors.css */
+:root {
+  /* Base Dark Theme */
+  --bg-dark: #222831; /* Deep charcoal */
+  --bg-darker: #1b2025; /* Almost black */
+  --bg-light: #2e343b; /* Slightly lighter section background */
+
+  /* Grays */
+  --gray-dark: #393e46; /* Card background / nav bar */
+  --gray-mid: #4a5057; /* Mid gray text */
+  --gray-light: #6b737c; /* Light gray borders/icons */
+  --gray-lighter: #a0a6ad; /* Muted placeholder text */
+
+  /* Primary Accent (Teal/Turquoise) */
+  --accent: #00adb5; /* Main accent */
+  --accent-light: #4ddde0; /* Hover / highlight */
+  --accent-dark: #009aa1; /* Buttons pressed */
+  --accent-muted: #00777d; /* Less saturated teal */
+
+  /* Secondary Accent (Complementary Colors) */
+  --secondary: #f08a5d; /* Warm orange contrast */
+  --secondary-light: #f3a880;
+  --secondary-dark: #d77449;
+
+  /* Status Colors */
+  --success: #4caf50; /* Green for success */
+  --warning: #ffc107; /* Amber for warnings */
+  --danger: #f44336; /* Red for errors */
+  --info: #2196f3; /* Blue info messages */
+
+  /* Neutrals */
+  --white: #ffffff;
+  --off-white: #f5f5f5;
+  --text-light: #eeeeee;
+  --text-dark: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

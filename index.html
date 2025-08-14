@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatCord</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/color-pallete.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/loader-login.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="./assets/logo.png" />
+  </head>
+  <body>
+    <main class="hidden">
+      <div class="login-container">
+        <div class="left">
+          <img src="assets/logo.png" class="icon" alt="ChatCord Logo" />
+
+          <div class="welcome-text">
+            <h3>Welcome <span>Back</span> !</h3>
+            <p>Enter your details and jump right in.</p>
+          </div>
+
+          <form action="#" class="login-form">
+            <label class="label-email" for="email"
+              >Email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-box"
+                autocomplete="email"
+                placeholder="Enter your mail address"
+            /></label>
+
+            <label for="password" class="label-password">
+              Password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input-box"
+                autocomplete="current-password"
+                placeholder="Enter password"
+              />
+            </label>
+            <input type="submit" value="Login" class="login-btn" />
+          </form>
+
+          <p class="or-panel">Or, Login with</p>
+          <a href="#" class="google-login-btn"
+            ><img src="assets/google-icon.png" alt="Google Icon" />Sign up with
+            Google</a
+          >
+          <p class="register-link">
+            Don't have an account ? <a href="#">Register now</a>
+          </p>
+        </div>
+        <div class="banner-img">
+          <img src="assets/banner-side.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <!-- loader html code -->
+    <div class="loader-container" id="preloader">
+      <div class="logo-loader">
+        <img src="assets/logo-trial.png" alt="logo" />
+      </div>
+    </div>
+  </body>
+  <script src="js/login.js"></script>
+  <script>
+    let waitMsLoginLoader = 0;
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const preloader = document.getElementById("preloader");
+        preloader.style.animation = "fadeOut 0.15s ease-out forwards";
+
+        // Remove after animation ends
+        preloader.addEventListener("animationend", () => {
+          preloader.style.display = "none";
+          document.querySelector("main").classList.remove("hidden");
+        });
+      }, waitMsLoginLoader);
+    });
+  </script>
+</html>
