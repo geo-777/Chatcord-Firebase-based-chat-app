@@ -3,6 +3,9 @@ body {
   font-family: "Outfit", sans-serif;
   color: white;
 }
+:root {
+  --shake-distance: 2px;
+}
 
 main {
   min-height: 100vh;
@@ -78,6 +81,9 @@ main {
   max-height: 45px;
   font-size: 10px;
   color: var(--gray-lighter);
+}
+.input-error-box {
+  border-color: var(--danger);
 }
 .input-box:focus {
   outline: none;
@@ -187,4 +193,28 @@ main {
 .tos-check {
   accent-color: var(--accent-dark);
   border-width: 1px;
+}
+.error-handler {
+  display: flex;
+  font-size: 11px;
+}
+.error-msg {
+  margin-left: auto;
+  color: var(--danger);
+}
+
+.hidden {
+  display: none;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(var(--shake-distance));
+  }
+  75% {
+    transform: translateX(calc(var(--shake-distance) * -1));
+  }
 }

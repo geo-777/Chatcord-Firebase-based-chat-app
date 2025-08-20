@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatcord</title>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,8 +29,13 @@
           </div>
 
           <form action="#" class="login-form">
-            <label for="username" class="label-user"
-              >Username
+            <label for="username" class="label-user">
+              <div class="error-handler">
+                <p>Username</p>
+                <p id="error-user" class="error-msg hidden">
+                  User already exists.
+                </p>
+              </div>
               <input
                 type="text"
                 name="username"
@@ -38,8 +44,13 @@
                 placeholder="Pick a username"
               />
             </label>
-            <label class="label-email" for="email"
-              >Email
+            <label class="label-email" for="email">
+              <div class="error-handler">
+                <p>Email</p>
+                <p id="error-email" class="error-msg hidden">
+                  Valid Email Required
+                </p>
+              </div>
               <input
                 type="email"
                 name="email"
@@ -50,7 +61,12 @@
             /></label>
 
             <label for="password" class="label-password">
-              Password
+              <div class="error-handler">
+                <p>Password</p>
+                <p id="error-pass" class="error-msg hidden">
+                  Password too short
+                </p>
+              </div>
               <input
                 type="password"
                 name="password"
@@ -68,7 +84,12 @@
               >
             </div>
 
-            <input type="submit" value="Login" class="login-btn" />
+            <input
+              type="submit"
+              value="Sign up "
+              id="signup-btn"
+              class="login-btn"
+            />
           </form>
 
           <p class="register-link">
@@ -102,4 +123,5 @@
       }, waitMsLoginLoader);
     });
   </script>
+  <script type="module" src="../js/register.js"></script>
 </html>
