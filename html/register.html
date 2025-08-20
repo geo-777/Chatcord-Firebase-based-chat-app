@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatCord</title>
+    <title>Chatcord</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,27 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="styles/color-pallete.css" />
-    <link rel="stylesheet" href="styles/login.css" />
-    <link rel="stylesheet" href="styles/loader-login.css" />
-
-    <!-- icon -->
-    <link rel="icon" href="./assets/logo.png" />
+    <link rel="icon" href="../assets/logo.png" />
+    <link rel="stylesheet" href="../styles/color-pallete.css" />
+    <link rel="stylesheet" href="../styles/loader-login.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
   </head>
   <body>
     <main class="hidden">
       <div class="login-container">
         <div class="left">
-          <img src="assets/logo.png" class="icon" alt="ChatCord Logo" />
+          <img src="../assets/logo.png" class="icon" alt="ChatCord Logo" />
 
           <div class="welcome-text">
-            <h3>Welcome <span>Back</span> !</h3>
-            <p>Enter your details and jump right in.</p>
+            <h3>Welcome <span>back</span> !</h3>
+            <p>Enter your details and jump right in</p>
           </div>
 
           <form action="#" class="login-form">
+            <label for="username" class="label-user"
+              >Username
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="input-box"
+                placeholder="Pick a username"
+              />
+            </label>
             <label class="label-email" for="email"
               >Email
               <input
@@ -51,36 +57,36 @@
                 id="password"
                 class="input-box"
                 autocomplete="current-password"
-                placeholder="Enter password"
+                placeholder="Enter a password"
               />
             </label>
+            <div class="tos-container">
+              <input type="checkbox" name="tos" id="tos" class="tos-check" />
+              <label class="tos-text" for="tos"
+                >I agree to the
+                <a class="tos-link" href="#">Terms & Condition.</a></label
+              >
+            </div>
+
             <input type="submit" value="Login" class="login-btn" />
           </form>
 
-          <p class="or-panel">Or, Login with</p>
-          <a href="#" class="google-login-btn"
-            ><img src="assets/google-icon.png" alt="Google Icon" />Sign up with
-            Google</a
-          >
           <p class="register-link">
-            Don't have an account ?
-            <a href="html/register.html">Register now</a>
+            Already have an account ? <a href="../index.html">Login</a>
           </p>
         </div>
         <div class="banner-img">
-          <img src="assets/banner-side.png" alt="" />
+          <img src="../assets/banner-side.png" alt="" />
         </div>
       </div>
     </main>
 
-    <!-- loader html code -->
     <div class="loader-container" id="preloader">
       <div class="logo-loader">
-        <img src="assets/logo-trial.png" alt="logo" />
+        <img src="../assets/logo-trial.png" alt="logo" />
       </div>
     </div>
   </body>
-  <script src="js/login.js"></script>
   <script>
     let waitMsLoginLoader = 0;
     window.addEventListener("load", () => {

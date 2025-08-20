@@ -3,9 +3,7 @@ body {
   font-family: "Outfit", sans-serif;
   color: white;
 }
-.hidden {
-  display: none;
-}
+
 main {
   min-height: 100vh;
   min-width: 100vw;
@@ -49,7 +47,8 @@ main {
   font-weight: 300;
 }
 .label-email,
-.label-password {
+.label-password,
+.label-user {
   font-size: 10px;
   font-family: "Inter", sans-serif;
   display: flex;
@@ -171,4 +170,21 @@ main {
     max-width: 1100px;
     max-height: 800pxs;
   }
+}
+.hidden {
+  display: none;
+}
+.tos-container {
+  display: flex;
+  gap: 0.3rem;
+}
+.tos-text {
+  font-size: 12px;
+}
+.tos-link {
+  color: var(--accent-dark);
+}
+.tos-check {
+  accent-color: var(--accent-dark);
+  border-width: 1px;
 }
